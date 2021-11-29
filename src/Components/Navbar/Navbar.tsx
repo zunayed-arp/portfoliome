@@ -16,7 +16,14 @@ const Navbar = () => {
             <ul className="flex space-x-5">
                 {
                     navNavLinks.map(element => <li key={element.path}>
-                        <NavLink to={`${element.path}`}>{element.title}</NavLink>
+                        <NavLink
+                            className={({ isActive }) => isActive ?
+                                "border-b-2 border-black pb-2" : //Indicates active links classes
+                                "hover:text-gray-400"} //Indicates inactive links classes
+                            to={`${element.path}`}
+                        >
+                            {element.title}
+                        </NavLink>
                     </li>)
                 }
             </ul>
