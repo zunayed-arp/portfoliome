@@ -7,7 +7,24 @@ const Home = () => {
         <div className="flex justify-between -mt-20">
             <div className="md:w-1/2 my-auto">
                 <h1 className="text-5xl font-bold leading-normal">Hello, I'm Mofajjal <br /> Rasul</h1>
-                <div className="flex space-x-5">
+                <ul className="flex space-x-5 text-3xl inline-block">
+                    <li>
+                        <p className="text-xl">Connect with me at:</p>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/IMZihad21"><i className="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/imzihad21"><i className="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noreferrer" href="https://stackoverflow.com/users/16378127"><i className="fab fa-stack-overflow"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noreferrer" href="mailto:imzihad@gmail.com"><i className="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+                <div className="flex space-x-5 mt-5">
                     <Link to="contact">
                         <button className="bg-black text-xl text-white inline-block mt-5 w-44 py-4 rounded-lg">Contact Me</button>
                     </Link>
