@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav className="flex justify-between mb-20">
             <div>
-                <h1 className="text-4xl font-bold">ZèD</h1>
+                <h1 className="text-3xl">ZèD.</h1>
             </div>
             <ul className="flex space-x-5">
                 {
