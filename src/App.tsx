@@ -30,7 +30,7 @@ function App() {
     setDarkMode(!darkMode)
   };
   return (
-    <div className="pt-10 px-5 pb-5 md:px-40 dark:bg-black dark:text-white min-h-screen">
+    <div className="pt-5 md:pt-10 px-5 pb-5 md:px-40 dark:bg-black dark:text-white min-h-screen">
       <BrowserRouter>
         <Navbar
           darkMode={darkMode}

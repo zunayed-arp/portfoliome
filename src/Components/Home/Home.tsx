@@ -7,7 +7,7 @@ const Home = () => {
         <div className="flex flex-col-reverse md:flex-row justify-between md:-mt-20">
             <div className="md:w-1/2 my-auto">
                 <h1 className="text-4xl md:text-5xl font-bold leading-normal">Hello, I'm Mofajjal <br /> Rasul</h1>
-                <ul className="flex space-x-5 text-2xl md:text-3xl inline-block">
+                <ul className="flex space-x-5 text-2xl md:text-3xl inline-block mt-5">
                     <li>
                         <p className="text-xl">Connect with me at:</p>
                     </li>
@@ -26,7 +26,7 @@ const Home = () => {
                 </ul>
                 <div className="flex space-x-5 mt-5">
                     <Link to="contact">
-                        <button className="bg-black text-xl text-white dark:bg-white dark:text-black inline-block mt-5 w-44 py-4 rounded-lg">Contact Me</button>
+                        <button className="bg-black text-xl text-white dark:bg-white dark:text-black inline-block mt-5 w-32 md:w-44 py-4 rounded-lg">Contact Me</button>
                     </Link>
                     <a href={`https://drive.google.com/uc?id=${resumeID}&export=download`}>
                         <button className="bg-black text-xl text-white dark:bg-white dark:text-black inline-block mt-5 w-44 py-4 rounded-lg">Download Resume</button>
