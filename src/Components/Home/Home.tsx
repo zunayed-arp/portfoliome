@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
     const resumeID: string = "15Ijsyf_rc5TLuBgE89WMmKi1yGQtJ5wg";
 
@@ -6,7 +8,14 @@ const Home = () => {
             <div className="md:w-1/2 my-auto">
                 <h1 className="text-5xl font-bold leading-normal">Hello, I'm Mofajjal <br /> Rasul</h1>
                 <p className="text-2xl mt-10 font-semibold leading-loose">I am a junior Full-stack Web Developer and a fresh Computer Science Engineering graduate. <br /> I'd love to hear from you so contact me!</p>
-                <a className="bg-black text-white inline-block mt-5 px-10 py-4 rounded-lg" href={`https://drive.google.com/uc?id=${resumeID}&export=download`}>Download Resume</a>
+                <div className="flex space-x-5">
+                    <Link to="contact">
+                        <button className="bg-black text-xl text-white inline-block mt-5 w-44 py-4 rounded-lg">Contact Me</button>
+                    </Link>
+                    <a href={`https://drive.google.com/uc?id=${resumeID}&export=download`}>
+                        <button className="bg-black text-xl text-white inline-block mt-5 w-44 py-4 rounded-lg">Download Resume</button>
+                    </a>
+                </div>
             </div>
             <div className="md:w-1/2 pl-20">
                 <svg width="100%" viewBox="0 0 426 543" fill="none" xmlns="http://www.w3.org/2000/svg">
