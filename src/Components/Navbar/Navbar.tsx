@@ -1,17 +1,25 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+    const navNavLinks: { title: string, path: string }[] = [
+        { title: "Home", path: "/" },
+        { title: "About", path: "/about" },
+        { title: "Portfolio", path: "/portfolio" },
+        { title: "Contact", path: "/contact" }
+    ];
+
     return (
         <nav className="flex justify-between">
             <div>
-                <h1>ZèD</h1>
+                <h1 className="text-4xl font-bold">ZèD</h1>
             </div>
-            <div className="space-x-5">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/portfolio">Portfolio</Link>
-                <Link to="/contact">Contact</Link>
-            </div>
+            <ul className="flex space-x-5">
+                {
+                    navNavLinks.map(element => <li key={element.path}>
+                        <NavLink to={`${element.path}`}>{element.title}</NavLink>
+                    </li>)
+                }
+            </ul>
         </nav>
     );
 };
