@@ -9,7 +9,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="flex justify-between">
+        <nav className="flex justify-between mb-20">
             <div>
                 <h1 className="text-4xl font-bold">ZèD</h1>
             </div>

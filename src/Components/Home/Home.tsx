@@ -4,7 +4,7 @@ const Home = () => {
     const resumeID: string = "15Ijsyf_rc5TLuBgE89WMmKi1yGQtJ5wg";
 
     return (
-        <div className="flex justify-between">
+        <div className="flex justify-between -mt-20">
             <div className="md:w-1/2 my-auto">
                 <h1 className="text-5xl font-bold leading-normal">Hello, I'm Mofajjal <br /> Rasul</h1>
                 <p className="text-2xl mt-10 font-semibold leading-loose">I am a junior Full-stack Web Developer and a fresh Computer Science Engineering graduate. <br /> I'd love to hear from you so contact me!</p>
