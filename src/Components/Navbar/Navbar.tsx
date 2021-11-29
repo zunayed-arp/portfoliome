@@ -11,11 +11,11 @@ const Navbar = (props: any) => {
     ];
 
     return (
-        <nav className="flex justify-between mb-20">
+        <nav className="md:flex justify-between mb-10 md:mb-20">
             <div>
                 <h1 className="text-3xl">ZèD.</h1>
             </div>
-            <ul className="flex space-x-5">
+            <ul className="flex space-x-2 md:space-x-5 mt-5 md:mt-0">
                 {
                     navNavLinks.map(element => <li key={element.path}>
                         <NavLink
