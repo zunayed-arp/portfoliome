@@ -9,7 +9,7 @@ const Projects = () => {
             .then(data => setProjects(data))
     }, [])
     return (
-        <div className="">
+        <div data-aos="zoom-out-left">
             <h1 className="text-4xl md:text-5xl font-bold leading-normal">Projects</h1>
             <div>
                 <div className="grid grid-cols-3 gap-5 mt-10">

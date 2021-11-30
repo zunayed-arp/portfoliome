@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Contact = () => {
     const [ loading, setLoading ] = useState<boolean>(true)
     return (
-        <div className="">
+        <div data-aos="zoom-out-left">
             <h1 className="text-4xl md:text-5xl font-bold leading-normal">Contact Me</h1>
             {
                 loading && <h3 className="text-2xl text-center mt-10 animate-pulse ">

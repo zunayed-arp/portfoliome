@@ -5,7 +5,13 @@ import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Projects from "./Components/Projects/Projects";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./styles/App.css"
+
+AOS.init({
+  startEvent: 'DOMContentLoaded',
+});
 
 function App() {
   const [ darkMode, setDarkMode ] = useState<boolean>(false);

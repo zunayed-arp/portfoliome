@@ -5,7 +5,7 @@ const Home = () => {
     const resumeID: string = "15Ijsyf_rc5TLuBgE89WMmKi1yGQtJ5wg";
 
     return (
-        <div className="flex flex-col-reverse md:flex-row justify-between md:-mt-20">
+        <div data-aos="zoom-out" className="flex flex-col-reverse md:flex-row justify-between md:-mt-20">
             <div className="md:w-1/2 my-auto">
                 <div className="text-4xl md:text-5xl font-bold leading-normal">
                     <Typical
