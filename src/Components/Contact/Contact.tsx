@@ -1,4 +1,3 @@
-// @ts-ignore
 import JotFormReact from 'jotform-react';
 import { useState } from 'react';
 

@@ -4,7 +4,11 @@ module.exports = {
   // mode: "jit",
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        'card': '600px',
+      }
+    },
   },
   variants: {},
   plugins: [],

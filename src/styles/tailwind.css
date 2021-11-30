@@ -13,3 +13,8 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@layer utilities {
+    .projectCard {
+      height: 600px;
+    }
+  }
