@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+// @ts-ignore
+import Typical from 'react-typical'
 
 const Home = () => {
     const resumeID: string = "15Ijsyf_rc5TLuBgE89WMmKi1yGQtJ5wg";
@@ -6,7 +8,13 @@ const Home = () => {
     return (
         <div className="flex flex-col-reverse md:flex-row justify-between md:-mt-20">
             <div className="md:w-1/2 my-auto">
-                <h1 className="text-4xl md:text-5xl font-bold leading-normal">Hello, I'm Mofajjal <br /> Rasul</h1>
+                <div className="text-4xl md:text-5xl font-bold leading-normal">
+                    <Typical
+                        steps={[ "Hello!", 1000, "I'm Mofajjal Rasul", 1000, "A Web Developer", 1000 ]}
+                        loop={Infinity}
+                        wrapper="h1"
+                    />
+                </div>
                 <ul className="flex space-x-5 text-2xl md:text-3xl inline-block mt-5">
                     <li>
                         <p className="text-xl">Connect with me at:</p>
