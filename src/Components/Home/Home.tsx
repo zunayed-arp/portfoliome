@@ -9,10 +9,11 @@ const Home = () => {
             <div className="md:w-1/2 my-auto">
                 <div className="text-4xl md:text-5xl font-bold leading-normal">
                     <Typical
-                        steps={[ "Hello!", 1000, "I'm Mofajjal Rasul", 1000, "A Web Developer", 1000 ]}
+                        steps={[ "Hello!", 1000, "Konnichiwa!", 1000, "Hola!", 1000, "Bonjour!", 1000, "Nǐn hǎo!", 1000, "Olá!", 1000 ]}
                         loop={Infinity}
                         wrapper="h1"
                     />
+                    <h1 className="mt-5">I'm Mofajjal Rasul</h1>
                 </div>
                 <ul className="flex space-x-5 text-2xl md:text-3xl inline-block mt-5">
                     <li>
