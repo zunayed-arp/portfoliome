@@ -13,6 +13,7 @@
     "autoprefixer": "^10.4.0",
     "cross-env": "^7.0.3",
     "delay-cli": "^1.1.0",
+    "jotform-react": "^1.0.4",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.4",
     "postcss-cli": "^8.3.1",
