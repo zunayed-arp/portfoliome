@@ -14,7 +14,7 @@ const Projects = () => {
         <div data-aos="zoom-out">
             <h1 className="text-4xl md:text-5xl font-bold leading-normal">Projects</h1>
             <div>
-                <div className="grid grid-cols-3 gap-5 mt-10">
+                <div className="grid md:grid-cols-3 gap-5 mt-10">
                     {
                         projects.map(project =>
                             <div key={project.id} className="relative projectCard rounded-lg shadow-lg">
