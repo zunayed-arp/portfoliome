@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
     const [ projects, setProjects ] = useState<{ id: number, name: string, cover: string }[]>([]);
 
     useEffect(() => {
-        fetch('projects.json')
+        fetch('/projects.json')
             .then(res => res.json())
             .then(data => setProjects(data))
-    }, [])
+    }, []);
+
     return (
-        <div data-aos="zoom-out-left">
+        <div data-aos="zoom-out">
             <h1 className="text-4xl md:text-5xl font-bold leading-normal">Projects</h1>
             <div>
                 <div className="grid grid-cols-3 gap-5 mt-10">
@@ -20,13 +22,15 @@ const Projects = () => {
 
                                 <div className="absolute bottom-0 text-center rounded-lg bg-black dark:bg-white text-white dark:text-black bg-opacity-75 dark:bg-opacity-75 w-full py-4">
                                     <h4 className="mb-3 text-2xl font-semibold tracking-tight">{project.name}</h4>
-                                    <button className="bg-white dark:bg-black text-xl text-black dark:text-white px-20 py-2 rounded-lg">More Details</button>
+                                    <Link to={`/project/${project.id}`}>
+                                        <button className="bg-white dark:bg-black text-xl text-black dark:text-white px-20 py-2 rounded-lg">More Details</button>
+                                    </Link>
                                 </div>
                             </div>)
                     }
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 

@@ -4,7 +4,9 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
-import Projects from "./Components/Projects/Projects";
+import Projects from "./Components/Projects/Projects/Projects";
+import Blogs from "./Components/Blogs/Blogs";
+import ProjectDetails from "./Components/Projects/ProjectDetails/ProjectDetails";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./styles/App.css"
@@ -44,9 +46,11 @@ function App() {
         />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
         </Routes>
       </BrowserRouter>
     </div>

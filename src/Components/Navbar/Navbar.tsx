@@ -5,9 +5,10 @@ const Navbar = (props: any) => {
 
     const navNavLinks: { title: string, path: string }[] = [
         { title: "Home", path: "/" },
-        { title: "About", path: "about" },
-        { title: "Projects", path: "projects" },
-        { title: "Contact", path: "contact" }
+        { title: "About", path: "/about" },
+        { title: "Projects", path: "/projects" },
+        { title: "Blogs", path: "/blogs" },
+        { title: "Contact", path: "/contact" }
     ];
 
     return (
