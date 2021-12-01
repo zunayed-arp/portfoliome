@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Typical from 'react-typical'
 
-const Home = () => {
+const Banner = () => {
     const resumeID: string = "15Ijsyf_rc5TLuBgE89WMmKi1yGQtJ5wg";
 
     return (
-        <div data-aos="zoom-out" className="flex flex-col-reverse md:flex-row justify-between md:-mt-20">
+        <div data-aos="fade-up" className="flex flex-col-reverse md:flex-row justify-between md:-mt-20">
             <div className="md:w-1/2 my-auto">
                 <div className="text-4xl md:text-5xl font-bold leading-normal">
                     <Typical
@@ -32,14 +32,9 @@ const Home = () => {
                         <a target="_blank" rel="noreferrer" href="mailto:imzihad@gmail.com"><i className="fas fa-envelope"></i></a>
                     </li>
                 </ul>
-                <div className="flex space-x-5 mt-5">
-                    <Link to="contact">
-                        <button className="bg-black text-xl text-white dark:bg-white dark:text-black inline-block mt-5 w-32 md:w-44 py-4 rounded-lg">Contact Me</button>
-                    </Link>
-                    <a href={`https://drive.google.com/uc?id=${resumeID}&export=download`}>
-                        <button className="bg-black text-xl text-white dark:bg-white dark:text-black inline-block mt-5 w-44 py-4 rounded-lg">Download Resume</button>
-                    </a>
-                </div>
+                <a className="mt-5" href={`https://drive.google.com/uc?id=${resumeID}&export=download`}>
+                    <button className="bg-black text-xl text-white dark:bg-white dark:text-black inline-block mt-5 px-20 py-4 rounded-lg">Download Resume</button>
+                </a>
             </div>
             <div className="md:w-1/2 md:pl-20">
                 <svg className="w-full" viewBox="0 0 426 543" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,4 +57,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Banner;

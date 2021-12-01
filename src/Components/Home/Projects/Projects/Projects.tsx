@@ -11,8 +11,8 @@ const Projects = () => {
     }, []);
 
     return (
-        <div data-aos="zoom-out">
-            <h1 className="text-4xl md:text-5xl font-bold leading-normal">Projects</h1>
+        <div data-aos="fade-up">
+            <h1 className="text-4xl md:text-5xl font-bold leading-normal">My Projects</h1>
             <div>
                 <div className="grid md:grid-cols-3 gap-5 mt-10">
                     {

@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div data-aos="zoom-out">
+        <div data-aos="fade-up">
             <h1 className="text-4xl md:text-5xl font-bold leading-normal">About</h1>
             <div className="text-xl md:text-2xl mt-5 md:mt-10 space-y-5 font-semibold leading-relaxed md:leading-loose">
                 <p>My name is Md. Mofajjal Rasul Jehad. Also known as ZèD in public communities. </p>

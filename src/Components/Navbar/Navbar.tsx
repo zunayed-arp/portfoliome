@@ -6,9 +6,7 @@ const Navbar = (props: any) => {
     const navNavLinks: { title: string, path: string }[] = [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
-        { title: "Projects", path: "/projects" },
-        { title: "Blogs", path: "/blogs" },
-        { title: "Contact", path: "/contact" }
+        { title: "Blogs", path: "/blogs" }
     ];
 
     return (
@@ -16,7 +14,7 @@ const Navbar = (props: any) => {
             <div>
                 <h1 className="text-3xl">ZèD.</h1>
             </div>
-            <ul className="flex space-x-2 md:space-x-5 mt-5 md:mt-0">
+            <ul className="flex justify-between space-x-2 md:space-x-5 mt-5 md:mt-0">
                 {
                     navNavLinks.map(element => <li key={element.path}>
                         <NavLink
